@@ -1,0 +1,5 @@
+src/models/**
+src/constant/**
+package-lock.json
+build/**
+src/env.json
