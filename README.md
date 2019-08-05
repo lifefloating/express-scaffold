@@ -49,3 +49,6 @@ $ npm run analyse:server
 │   └── /watch.js                  # watch public folder, if changed copy files to dist/public folder
 └── package.json                   # npm libraries and utilities
 ```
+
+## webpack babel借鉴了这个项目
+## https://github.com/kriasoft/react-starter-kit
