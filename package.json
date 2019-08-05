@@ -70,6 +70,6 @@
     "eslint": "eslint \"src/**/*.js\"",
     "benchmark": "babel-node ./src/benchmark.js"
   },
-  "author": "",
+  "author": "dante0206",
   "license": "ISC"
 }
