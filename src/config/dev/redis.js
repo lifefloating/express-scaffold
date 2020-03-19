@@ -2,7 +2,7 @@
  * created by curdBoy
  */
 
-export default {
+module.exports =  {
   setting: {
     host: 'host ip',
     port: 6379,

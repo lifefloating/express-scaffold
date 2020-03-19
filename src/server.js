@@ -28,7 +28,7 @@ if (!__DEV__) {
   })
 }
 
-const PORT = 9000
+const PORT = 62000
 const app = express()
 
 // attach helmet middleware

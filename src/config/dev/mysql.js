@@ -1,6 +1,6 @@
 
 
-export default {
+module.exports = {
   dbname: 'test',
   name: 'root',
   password: 'pwd',

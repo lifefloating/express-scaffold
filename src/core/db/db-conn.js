@@ -5,7 +5,7 @@
 
 import mongoose from 'mongoose'
 import Promise from 'bluebird'
-import { dbConn } from '../../config'
+import {dbConn} from '../../config'
 // import LogUtil from '../util/log-util'
 
 let dbClients = {}
@@ -23,12 +23,14 @@ dbConn.connMap.forEach((value, key, map) => {
     })
   }
   conn.on('disconnected', function(a, b, c) {
+    // eslint-disable-next-line no-unused-vars
     let message = `${dbConn[key]} disconnected`
-    global.LogUtil.error(new Error('conn disconnected'), null, {method: 'disconnected', message: message})
+    // global.LogUtil.error(new Error('conn disconnected'), null, {method: 'disconnected', message: message})
   })
   conn.on('error', function(err) {
+    // eslint-disable-next-line no-unused-vars
     let message = `${dbConn[key]} encountered error:${err.message}`
-    global.LogUtil.error(err, null, {method: 'error', message: message})
+    // global.LogUtil.error(err, null, {method: 'error', message: message})
   })
   dbClients[key] = conn
 })

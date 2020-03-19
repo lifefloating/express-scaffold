@@ -14,4 +14,4 @@ var logSchema = mongoose.Schema({
     log_date: { type: Date, default: Date.now }  // date
 }, { read: 'secondaryPreferred' });
 
-module.exports = conn.admin.model('logs', logSchema);
+// module.exports = conn.admin.model('logs', logSchema);
