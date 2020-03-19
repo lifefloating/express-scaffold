@@ -1,6 +1,6 @@
 import express from 'express'
 import path from 'path'
-import opn from 'opn'
+import open from 'open'
 
 const app = express()
 const PORT = 9001
@@ -12,5 +12,5 @@ app.listen(PORT, function(err) {
     throw err
   }
   console.log(`Analyse server listening on ${PORT}`)
-  opn(`http://127.0.0.1:${PORT}`)
+  open(`http://127.0.0.1:${PORT}`)
 })
