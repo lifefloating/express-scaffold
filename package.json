@@ -42,7 +42,7 @@
     "on-headers": "^1.0.2",
     "webpack": "^4.42.0",
     "webpack-bundle-analyzer": "^3.6.1",
-    "uglifyjs-webpack-plugin": "^2.2.0",
+    "terser-webpack-plugin": "^2.3.5",
     "benchmark": "^2.1.4",
     "chai": "^4.1.0",
     "eslint-config-semistandard": "^15.0.0",
