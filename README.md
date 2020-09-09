@@ -3,6 +3,7 @@
 ### webpack bable配置; 可docker部署;
 ### todo1 之后可能会加上log4js express换成koa2
 ### todo2 ts重构 (咕)
+### 增加PM2部署配置 PM2部署
 
 
 ## How to install
@@ -48,6 +49,15 @@ $ npm run analyse:server
 │   ├── /start.js                  # Launches the development web server with "live reload"
 │   └── /watch.js                  # watch public folder, if changed copy files to dist/public folder
 └── package.json                   # npm libraries and utilities
+```
+
+## PM2部署注意
+```
+    1.打包pm2
+    2.移动解压移动到 /usr/local/NODE目录/lib/node_modules/
+    3. 
+        cd /usr/bin
+        ln -s /usr/local/NODE目录/lib/node_modules/pm2/bin/pm2 pm2
 ```
 
 ## webpack babel借鉴了这个项目

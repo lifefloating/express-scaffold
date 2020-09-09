@@ -1,0 +1,23 @@
+{
+    "apps": [
+        {
+            "name": "express-demo",
+            "script": "/usr/local/servicesfile/express-scaffold/src/server.js",
+            "log_date_format": "YYYY-MM-DD HH:mm Z",
+            "error_file": "/usr/local/servicesfile/logs/svr_err.log",
+            "out_file": "/usr/local/servicesfile/logs/svr.log",
+            "pid_file": "/usr/local/servicesfile/logs/express-scaffold.pid",
+            "min_uptime": "20s",
+            "max_restarts": 50,
+            "watch": false,
+            "merge_logs": true,
+            "exec_interpreter": "node",
+            "exec_mode": "fork",
+            "max_memory_restart": "5G",
+            "autorestart": true,
+            "env": {
+                "NODE_ENV": "prod"
+            }
+        }
+    ]
+}
